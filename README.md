@@ -21,4 +21,19 @@ exten => 9613050252,1,NoOp()
 ```
 Now after the call is done we see the memory leak
 
+* default settings
+```
+asterisk:
+  url: http://192.168.70.80:8088/
+  username: risk
+  password: risk
+  originate-stasis: received-test
+  terminate-stasis: test-dump
+  end-point: SonusUK
+  call-delay: 10
+logging:
+  level:
+    com.shahbour: debug
+```
+
 * Settings can be changed from application.yml in resources folder
