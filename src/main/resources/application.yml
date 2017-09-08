@@ -4,6 +4,7 @@ asterisk:
   password: risk
   originate-stasis: received-test
   terminate-stasis: test-dump
+  end-point: SonusUK
   call-delay: 10
 logging:
   level:

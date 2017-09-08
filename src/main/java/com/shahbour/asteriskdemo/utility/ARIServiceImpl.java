@@ -23,7 +23,7 @@ public class ARIServiceImpl {
 
     @Getter
     @Setter
-    private String url,username,password,originateStasis,terminateStasis;
+    private String url,username,password,endPoint,originateStasis,terminateStasis;
 
     @Getter
     private ARI ari;

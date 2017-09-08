@@ -34,7 +34,7 @@ public class CallController {
                                      @RequestParam(required = false,defaultValue = "9613050252") String to) {
         try {
             log.debug("Trying to Call {} to {}",from,to);
-            String endpoint = "SIP/SonusUK/" + to;
+            String endpoint = "SIP/"+ ariService.getEndPoint() +"/" + to;
             ActionChannels actionChannels = ariService.getAri().getActionImpl(ActionChannels.class);
             Map<String,String> variables = new HashMap<>();
             variables.put("originateStasis",ariService.getOriginateStasis());
