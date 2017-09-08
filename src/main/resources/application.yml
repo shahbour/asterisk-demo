@@ -1,0 +1,10 @@
+asterisk:
+  url: http://192.168.70.80:8088/
+  username: risk
+  password: risk
+  originate-stasis: received-test
+  terminate-stasis: test-dump
+  call-delay: 10
+logging:
+  level:
+    com.shahbour: debug
